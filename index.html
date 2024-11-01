@@ -34,13 +34,13 @@
               <a href="#recipes" class="nav__link"> Recipes </a>
             </li>
             <li>
-              <a href="#reservation" class="nav__link"> Book a table </a>
+              <a href="#book-a-table" class="nav__link"> Book a table </a>
             </li>
             <li>
               <a href="#menu" class="nav__link"> Menu </a>
             </li>
             <li>
-              <a href="#about" class="nav__link"> Contacts </a>
+              <a href="#contacts" class="nav__link"> Contacts </a>
             </li>
           </ul>
         </nav>
@@ -58,12 +58,12 @@
           class="header__image"
         />
         <div class="header__footer">
-          <div class="header__footer header__footer_hours">
+          <div class="header__hours">
             <p class="header__paragraph">Hours:</p>
             <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
             <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
           </div>
-          <div class="header__footer header__footer_address">
+          <div class="header__address">
             <p class="header__paragraph">
               200 Success Avenue, The Town of Triple Peaks
             </p>
@@ -73,7 +73,10 @@
       <main class="content">
         <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
-          <p class="recipes__subtitle">Check out some recipes we've collected for your home-brewing convenience:</p>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
           <ul class="recipes__videos">
             <li>
               <iframe
@@ -101,9 +104,63 @@
             </li>
           </ul>
         </section>
-        <section class="reservation" id="reservation"></section>
-        <section class="menu" id="menu"></section>
-        <section class="contacts" id="about"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Book a Table</h2>
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">Name *</label>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Name Surname"
+                id="name"
+                name="name"
+                required
+              />
+              <label for="guests" class="form__label">Number of Guests *</label>
+              <input
+                type="number"
+                class="form__input"
+                placeholder="1-8"
+                min="1"
+                max="8"
+                id="guests"
+                name="guests"
+                required
+              />
+              <label for="date" class="form__label">Date & time *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="date"
+                name="date"
+              />
+              <label for="email" class="form__label">Your email *</label>
+              <input
+                type="email"
+                class="form__input"
+                placeholder="email@email.com"
+                id="email"
+                name="email"
+                required
+              />
+            </fieldset>
+            <button type="submit" class="form__button">Book a table</button>
+            <label for="terms" class="form__label form__label_type_checkbox">
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                id="terms"
+                name="terms"
+                required
+                checked
+              />
+              <span class="form__checkbox-visible"></span>I agree with the terms of use
+            </label>
+          </form>
+        </section>
+        <section class="menu" id="Menu"></section>
+        <section class="about" id="about"></section>
       </main>
       <footer class="footer"></footer>
     </div>
