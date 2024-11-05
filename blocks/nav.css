@@ -26,8 +26,9 @@
   color: #000000;
   text-decoration: none;
   font-weight: 500;
+  transition: opacity 0.3s linear 0s;
 }
 
 .nav__link:hover {
-  color: #d35722;
+  opacity: 50%;
 }
