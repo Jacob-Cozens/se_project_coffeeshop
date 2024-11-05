@@ -4,6 +4,8 @@
 
 .form__fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form__label {
@@ -21,7 +23,7 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin: 32px 0 0 0;
+  margin: 0;
 }
 
 .form__input {
@@ -35,6 +37,7 @@
   font-family: Inter, Arial, sans-serif;
   font-size: 20px;
   line-height: 30px;
+  border-radius: 4px;
 }
 
 .form__button {
@@ -57,19 +60,9 @@
   background-color: #3f96f3;
 }
 
-.form__checkbox-visible {
+.form__checkbox {
   border-radius: 2px;
   height: 20px;
   width: 20px;
   background-color: #1878dc;
-}
-
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-input[type="checkbox"]:checked + span {
-  background-image: url(../images/check.svg);
 }

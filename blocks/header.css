@@ -1,10 +1,13 @@
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   background-image: url(../images/background_header.svg);
   background-size: cover;
+  background-position: center;
   height: 800px;
+  z-index: 1;
 }
 
 .header__title {
@@ -31,11 +34,11 @@
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
-  margin-left: 80px;
+  margin: 0 0 0 80px;
 }
 
 .header__image {
-  z-index: 1;
+  z-index: -1;
   width: 646px;
   height: 568px;
   position: absolute;
@@ -57,18 +60,13 @@
 .header__footer {
   display: flex;
   justify-content: space-between;
-  margin-top: auto;
-  width: 100%;
+  margin: auto 80px 40px;
   box-sizing: border-box;
   font-family: Inter, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
-}
-
-.header__hours {
-  margin: auto 0 40px 80px;
 }
 
 .header__address {
